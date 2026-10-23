@@ -9,9 +9,7 @@ captures/
 .externalNativeBuild/
 .cxx/
 
-# Built APKs (published as GitHub releases instead)
-releases/
-*.apk
+# Build outputs (release APKs are kept in releases/)
 *.aab
 
 # Signing keys

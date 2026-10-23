@@ -29,6 +29,11 @@ budget TVs.
 - Android 11 (API 30) or newer, TV or box with a D-pad remote.
 - To build: JDK 17 and the Android SDK (compileSdk 35).
 
+## Download
+
+Ready-to-install APKs are in the [releases](releases) folder. The newest is
+[TVLauncherLite-0.2.0.apk](releases/TVLauncherLite-0.2.0.apk).
+
 ## Build
 
 ```bash
@@ -41,7 +46,7 @@ be sideloaded straight away; use your own signing key before distributing it.
 ## Install and set as Home
 
 ```bash
-adb install -r app/build/outputs/apk/release/app-release.apk
+adb install -r releases/TVLauncherLite-0.2.0.apk
 ```
 
 Then press the Home button on the remote and choose **TV Launcher Lite**, or pick it under the TV's
