@@ -1,0 +1,22 @@
+# Gradle / Android Studio
+.gradle/
+build/
+app/build/
+local.properties
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Built APKs (published as GitHub releases instead)
+releases/
+*.apk
+*.aab
+
+# Signing keys
+*.jks
+*.keystore
+
+# Local tooling
+.claude/

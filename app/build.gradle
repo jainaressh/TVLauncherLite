@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tvcctv.launcher'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.tvcctv.launcher'
+        minSdk 30
+        targetSdk 35
+        // versionCode = major * 10000 + minor * 100 + patch, so every release installs over the last one.
+        versionCode 200
+        versionName '0.2.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Debug key so the APK can be sideloaded straight away. Use a real key before publishing.
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    dependenciesInfo {
+        includeInApk false
+        includeInBundle false
+    }
+}
+
+// No dependencies on purpose: framework APIs only keeps the APK and RAM use tiny.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Plain black window, no system wallpaper behind it. The launcher swaps in the chosen background. -->
+    <style name="Launcher" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <!-- Stronger shadows so a lifted, focused tile casts a visible coloured glow. -->
+        <item name="android:spotShadowAlpha">0.55</item>
+        <item name="android:ambientShadowAlpha">0.35</item>
+    </style>
+</resources>

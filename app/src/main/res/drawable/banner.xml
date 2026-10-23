@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="#FF1A1C20"
+        android:pathData="M0,0h320v180h-320z" />
+    <!-- A 3x2 grid of app tiles, one highlighted. -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M96,62h40v24h-40z" />
+    <path
+        android:fillColor="#FF5F6368"
+        android:pathData="M140,62h40v24h-40zM184,62h40v24h-40zM96,90h40v24h-40zM140,90h40v24h-40zM184,90h40v24h-40z" />
+</vector>
